@@ -34,7 +34,7 @@ $result = $mysqli->query($query);
             echo <<<ARTICLE
         <article class="news__article article-news">
             <div class="article-news__date">{$article['idate']}</div>
-            <h2 class="article-news__heading"><a href="view.php?id={$article['id']}">{$article['title']}</a></h2>
+            <h2 class="article-news__heading"><a href="view.php?page={$thisPage}&id={$article['id']}">{$article['title']}</a></h2>
             <p class="article-news__paragraph">{$article['announce']}</p>
         </article>
 ARTICLE;
@@ -48,7 +48,7 @@ ARTICLE;
             for ($page = 1; $page <= $pageAmount; $page++) {
                 if ($thisPage == $page)
                     $activePage = 'active';
-                echo "<li class='pages-news__item {$activePage}'><a href='index.php?page={$page}' class='pages-news__link'>{$page}</a></li>";
+                echo "<li class='pages-news__item {$activePage}'><a href='news.php?page={$page}' class='pages-news__link'>{$page}</a></li>";
                 $activePage = '';
             }
             ?>
