@@ -16,9 +16,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -29,7 +32,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600868575975</updated>
-      <workItem from="1600868577050" duration="294000" />
+      <workItem from="1600868577050" duration="3158000" />
     </task>
     <servers />
   </component>
@@ -37,9 +40,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600868767821">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600869142797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1600868767821" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1600869142797" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600868902083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1600868902083" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1600869247732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1600869247732" />
   </component>
 </project>

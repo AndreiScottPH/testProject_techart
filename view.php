@@ -1,3 +1,6 @@
+<?php
+require_once 'scripts/database_connection.php'
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -35,7 +38,7 @@
             </p>
         </article>
     </div>
-    <div class="view__to-news-link"><a href="index.html">Все новости >></a></div>
+    <div class="view__to-news-link"><a href="index.php">Все новости >></a></div>
 </div>
 <script src="main.js"></script></body>
 </html>
