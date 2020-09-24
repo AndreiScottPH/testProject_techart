@@ -1,8 +1,17 @@
 <?php
 require_once 'scripts/database_connection.php';
-$articleID = $mysqli->real_escape_string(trim($_GET['id']));
-$query = sprintf("SELECT title, content FROM news WHERE id=%d", $articleID);
-$result = ($mysqli->query($query))->fetch_array();
+
+//id новости
+$articleID = trim($_GET['id']);
+
+//получение новости
+$sql = "SELECT title, content FROM news WHERE id=:id";
+$stn = $pdo->prepare($sql);
+$stn->bindValue(':id', $articleID, PDO::PARAM_INT);
+$stn->execute();
+$result = $stn->fetch(PDO::FETCH_ASSOC);
+
+//обработка контента новости
 $result['content'] = preg_replace("/<p>/", "<p class='view__paragraph'>", trim($result['content']));
 ?>
 <!doctype html>

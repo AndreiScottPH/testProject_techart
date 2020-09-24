@@ -1,18 +1,30 @@
 <?php
 require_once 'scripts/database_connection.php';
 
+//на странице постов
 $perPage = 5;
-//количество страниц
-$_GET['page'] = (empty($_GET['page'])) ? 1 : $_GET['page'];
-$queryAmount = sprintf("SELECT COUNT(*) FROM news");
-$resultAmount = ($mysqli->query($queryAmount))->fetch_row();
-$pageAmount = ceil($resultAmount[0] / $perPage);
 
+//текущая страница
+$_GET['page'] = empty($_GET['page']) ? 1 : $_GET['page'];
 $thisPage = $_GET['page'];
 
+//количество страниц
+$sql = "SELECT COUNT(*) FROM news";
+$statement = $pdo->prepare($sql);
+$statement->execute();
+$resultAmount = $statement->fetch();
+$pageAmount = ceil($resultAmount[0] / $perPage);
+
+//первая новость страницы
 $startLimit = ($thisPage - 1) * $perPage;
-$query = sprintf("SELECT id, idate, title, announce FROM news ORDER BY idate DESC LIMIT %d, %d", $startLimit, $perPage);
-$result = $mysqli->query($query);
+
+//получение новостей
+$sql = "SELECT id, idate, title, announce FROM news ORDER BY idate DESC LIMIT :start, :amount";
+$statement = $pdo->prepare($sql);
+$statement->bindValue(':start', $startLimit, PDO::PARAM_INT);
+$statement->bindValue(':amount', $perPage, PDO::PARAM_INT);
+$statement->execute();
+$postList = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!doctype html>
@@ -28,18 +40,17 @@ $result = $mysqli->query($query);
 <div class="news__content _container">
     <h1 class="news__heading">Новости</h1>
     <div class="news__articles-container">
-        <?php
-        while ($article = $result->fetch_array()) {
-            $article['idate'] = date("d.m.Y", $article['idate']);
-            echo <<<ARTICLE
-        <article class="news__article article-news">
-            <div class="article-news__date">{$article['idate']}</div>
-            <h2 class="article-news__heading"><a href="view.php?page={$thisPage}&id={$article['id']}">{$article['title']}</a></h2>
-            <p class="article-news__paragraph">{$article['announce']}</p>
-        </article>
-ARTICLE;
-        }
-        ?>
+        <? foreach ($postList as $post):
+            $post['idate'] = date("d.m.Y", $post['idate']);
+            ?>
+            <article class="news__article article-news">
+                <div class="article-news__date"><?= $post['idate']; ?></div>
+                <h2 class="article-news__heading">
+                    <a href="view.php?page=<?= $thisPage . '&id=' . $post['id']; ?>"><?= $post['title']; ?></a>
+                </h2>
+                <p class="article-news__paragraph"><?= $post['announce']; ?></p>
+            </article>
+        <? endforeach; ?>
     </div>
     <div class="news__pages pages-news">
         <div class="pages-news__heading">Страницы:</div>

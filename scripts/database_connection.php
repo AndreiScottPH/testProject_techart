@@ -1,5 +1,4 @@
 <?php
-require_once 'app_config.php';
+error_reporting(0);
 
-$mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
-$mysqli->query("SET NAMES utf8");
+$pdo = new PDO("mysql:host={HOST}; dbname=testproject_techart; charset=utf8", 'root', 'root');
