@@ -21,8 +21,11 @@ TestProject
 <li> news.php - показ первой страницы новостей
 <li> news.php?page='N' - показ N-ой страницы новостей
 <li> view.php?id='ID' - показ одной новости
+  
  ***
+ 
   Тэги:
+  
 <li> v1 - реализовано с помощью class mysqli
 <li> v2 - реализовано с помощью class PDO
 <li> v3 - реализовано с помощью class PDO и ООП
