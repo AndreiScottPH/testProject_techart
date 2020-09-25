@@ -1,21 +1,24 @@
 <?php
-require_once 'scripts/app_config.php';
+require 'autoload.php';
+
+$pdo = new PDO("mysql:host=127.0.0.1; dbname=testproject_techart; charset=utf8", 'root', 'root');
 
 
-$pdo = new PDO("mysql:host=HOST; dbname=testproject_techart; charset=utf8", 'root', 'root');
-if ($pdo->errorCode()){
-    var_dump($pdo->errorCode());
-    var_dump($pdo->errorInfo());
-    exit();
-}
 
 
-$sql = "SELECT title, content FROM news WHERE id=:id";
-$statement = $pdo->prepare($sql);
-$statement->bindValue(':id', 2, PDO::PARAM_INT);
-$statement->execute();
-$post = $statement->fetch(PDO::FETCH_ASSOC);
-var_dump($post);
+//if ($pdo->errorCode()){
+//    var_dump($pdo->errorCode());
+//    var_dump($pdo->errorInfo());
+//    exit();
+//}
+//
+//
+//$sql = "SELECT title, content FROM news WHERE id=:id";
+//$statement = $pdo->prepare($sql);
+//$statement->bindValue(':id', 2, PDO::PARAM_INT);
+//$statement->execute();
+//$post = $statement->fetch(PDO::FETCH_ASSOC);
+//var_dump($post);
 
 //$sql = "SELECT COUNT(*) FROM news";
 //$statement = $pdo->prepare($sql);

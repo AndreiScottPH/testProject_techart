@@ -6,7 +6,6 @@ $perPage = 5;
 
 //текущая страница
 $_GET['page'] = empty($_GET['page']) ? 1 : $_GET['page'];
-$thisPage = $_GET['page'];
 
 //количество страниц
 $sql = "SELECT COUNT(*) FROM news";
@@ -16,7 +15,7 @@ $resultAmount = $statement->fetch();
 $pageAmount = ceil($resultAmount[0] / $perPage);
 
 //первая новость страницы
-$startLimit = ($thisPage - 1) * $perPage;
+$startLimit = ($_GET['page'] - 1) * $perPage;
 
 //получение новостей
 $sql = "SELECT id, idate, title, announce FROM news ORDER BY idate DESC LIMIT :start, :amount";
