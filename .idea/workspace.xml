@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d02fd06-1786-43e8-8573-a66082457c7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages_view/news_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/class_connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/database_connection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/model.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/queryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/queryBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +23,15 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node_modules/npm" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -51,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601021021232</updated>
-      <workItem from="1601021022840" duration="3170000" />
+      <workItem from="1601021022840" duration="4766000" />
     </task>
     <servers />
   </component>
@@ -59,14 +55,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1601025048233">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601025048233" />
     <state x="586" y="198" key="#Inspections" timestamp="1601021385065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601021385065" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601021489059">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601024905272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601021489059" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601024905272" />
     <state x="688" y="243" key="NewPhpClassDialog" timestamp="1601022159430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -75,9 +75,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601023854534" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1601021532897">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601024641012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601021532897" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601024641012" />
+    <state x="845" y="250" key="ftp.server.browser" timestamp="1601025045331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="250" key="ftp.server.browser/0.0.1920.1040/-1680.26.1680.1010/-3600.-98.1920.1040@0.0.1920.1040" timestamp="1601025045331" />
   </component>
 </project>
