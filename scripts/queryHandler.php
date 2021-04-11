@@ -10,11 +10,9 @@ class queryHandler
 
     public function getPagesAmount($amount, $perPage)
     {
-        if (is_string($amount) || is_int($amount)) {
-            return ceil($amount / $perPage);
-        } else {
-            return false;
-        }
+        if (!is_string($amount) && !is_int($amount)) return false;
+        
+        return ceil($amount / $perPage);
     }
 
     public function getStartLimit($thisPage, $perPage)
